@@ -1,0 +1,14 @@
+
+server:
+  servlet:
+    context-path: /hc
+  port: 8009
+
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: ChaMi@.!123
+    url: jdbc:mysql://115.29.173.175/haircut?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC

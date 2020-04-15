@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hc-common/hc-common.iml" filepath="$PROJECT_DIR$/hc-common/hc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hc-dao/hc-dao.iml" filepath="$PROJECT_DIR$/hc-dao/hc-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hc-entity/hc-entity.iml" filepath="$PROJECT_DIR$/hc-entity/hc-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hc-service/hc-service.iml" filepath="$PROJECT_DIR$/hc-service/hc-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hc-web/hc-web.iml" filepath="$PROJECT_DIR$/hc-web/hc-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-hc-springboot.iml" filepath="$PROJECT_DIR$/mi-hc-springboot.iml" />
+    </modules>
+  </component>
+</project>

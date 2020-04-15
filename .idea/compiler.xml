@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hc-common" />
+        <module name="hc-dao" />
+        <module name="hc-entity" />
+        <module name="hc-service" />
+        <module name="hc-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hc-common" target="1.8" />
+      <module name="hc-dao" target="1.8" />
+      <module name="hc-entity" target="1.8" />
+      <module name="hc-service" target="1.8" />
+      <module name="hc-web" target="1.8" />
+      <module name="mi-hc-springboot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
