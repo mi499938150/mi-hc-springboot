@@ -46,7 +46,7 @@
             <artifactId>commons-codec</artifactId>
             <version>1.9</version>
         </dependency>
-        <!-- 添加实体类和业务类-->
+        <!-- 添加实体类、业务类、Dao层-->
         <dependency>
             <groupId>com.mi</groupId>
             <artifactId>hc-service</artifactId>
@@ -57,7 +57,12 @@
             <artifactId>hc-entity</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        
+        <dependency>
+            <groupId>com.mi</groupId>
+            <artifactId>hc-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <!--

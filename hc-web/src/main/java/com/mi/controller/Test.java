@@ -1,10 +1,16 @@
 package com.mi.controller;
 
+import com.mi.entity.AppointService;
 import com.mi.entity.User;
+import com.mi.service.AServiceService;
 import com.mi.service.UserService;
+import com.mi.utils.ResponseVoUtil;
+import com.mi.vo.CommonResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author : Rong
@@ -16,14 +22,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class Test {
 
     @Autowired
-    private UserService userService;
+    private AServiceService aServiceService;
 
     @RequestMapping("test")
-    public String Test(){
-        User user = new User();
-        user.setUid("111");
-        userService.addUser(user);
-        String str = user.getUid();
-        return str;
+    public CommonResponse test(){
+        List<AppointService> appointServices = aServiceService.SelectAll();
+       return ResponseVoUtil.success(appointServices);
     }
+
 }
