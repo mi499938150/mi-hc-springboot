@@ -12,4 +12,6 @@ import java.util.List;
 public interface AServiceService {
 
     List<AppointService> SelectAll();
+
+    AppointService SelectByOne(String appointId);
 }

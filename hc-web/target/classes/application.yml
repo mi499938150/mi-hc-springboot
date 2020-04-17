@@ -6,9 +6,22 @@ server:
 
 
 
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: ChaMi@.!123
     url: jdbc:mysql://115.29.173.175/hc?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.mi.entity
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count==countSql
+  page-size-zero: true

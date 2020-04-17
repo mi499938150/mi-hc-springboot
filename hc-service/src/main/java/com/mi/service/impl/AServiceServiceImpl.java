@@ -26,4 +26,9 @@ public class AServiceServiceImpl  implements AServiceService{
     public List<AppointService> SelectAll() {
         return aServiceMapper.selectAll();
     }
+
+    @Override
+    public AppointService SelectByOne(String appointId) {
+        return aServiceMapper.selectByPrimaryKey(appointId);
+    }
 }

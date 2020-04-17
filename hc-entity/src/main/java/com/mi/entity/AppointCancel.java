@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * @author : Rong
@@ -26,10 +27,10 @@ public class AppointCancel implements Serializable{
     private String cancelReason;
 
     /**创建时间**/
-    private Timestamp createTime;
+    private Date createTime;
 
     /**修改时间**/
-    private Timestamp updateTime;
+    private Date updateTime;
 
 
 }

@@ -53,9 +53,9 @@ public class AppointOrder   implements Serializable {
     private Integer payStatus;
 
     /**创建时间**/
-    private Timestamp createTime;
+    private Date createTime;
 
     /**修改时间**/
-    private Timestamp updateTime;
+    private Date updateTime;
 
 }
