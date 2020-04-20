@@ -5,9 +5,13 @@ import com.github.pagehelper.PageInfo;
 import com.mi.entity.AppointItem;
 import com.mi.mapper.AItemMapper;
 import com.mi.service.AItemService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+import tk.mybatis.mapper.entity.Example;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -16,6 +20,7 @@ import java.util.List;
  * @Desc: 服务实现类
  */
 @Service
+@Slf4j
 public class AItemServiceImpl implements AItemService {
 
     @Autowired
@@ -58,6 +63,11 @@ public class AItemServiceImpl implements AItemService {
         return aItemMapper.deleteByPrimaryKey(appointId);
     }
 
+    @Override
+    public int updateItem(AppointItem item) {
+        return aItemMapper.updateByPrimaryKeySelective(item);
+    }
+
     /**
      * 分页
      * @param offset
@@ -65,11 +75,28 @@ public class AItemServiceImpl implements AItemService {
      * @return
      */
     @Override
-    public PageInfo<AppointItem> selectByPages(Integer offset, Integer pageSize) {
+    public PageInfo<AppointItem> selectByPages(Integer offset, Integer pageSize,String itemName) {
         PageHelper.startPage(offset,pageSize);
-        List<AppointItem> itemPages = aItemMapper.selectAll();
+        Example example = new Example(AppointItem.class);
+        Example.Criteria criteria = example.createCriteria();
+        if (!StringUtils.isEmpty(itemName) && itemName.length() > 0) {
+            log.info("itemName = {}",itemName);
+            criteria.andLike("itemName","%"+itemName+"%");
+        }
+        List<AppointItem> itemPages = aItemMapper.selectByExample(example);
         PageInfo<AppointItem> pageInfo = new PageInfo<>(itemPages);
         return pageInfo;
+    }
+
+    /**
+     * 批量删除
+     * @param itemIds
+     * @return
+     */
+    @Override
+    public int batchDelAItem(List<String> itemIds) {
+        int isBatch  = aItemMapper.batchDelAItem(itemIds);
+        return isBatch;
     }
 
 }

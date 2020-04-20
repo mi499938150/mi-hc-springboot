@@ -21,11 +21,20 @@ public interface AItemService {
 
     public int delectByOne(String appointId);
 
+    public int updateItem(AppointItem item);
+
     /**
      * 分页
      * @param offset
      * @param pageSize
      * @return
      */
-    public PageInfo<AppointItem> selectByPages(Integer offset, Integer pageSize);
+    public PageInfo<AppointItem> selectByPages(Integer offset, Integer pageSize,String keywords);
+
+    /**
+     * 批量删除
+     * @param itemIds
+     * @return
+     */
+    public int batchDelAItem(List<String> itemIds);
 }

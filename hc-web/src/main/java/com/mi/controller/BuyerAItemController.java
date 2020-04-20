@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.sql.Timestamp;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -77,7 +78,7 @@ public class BuyerAItemController {
      */
     @GetMapping(value = "/selectAItem/{id}")
     public CommonResponse selectAItem(@PathVariable("id")String appointId){
-        log.info("【使用selectAItem 方法】");
+        log.info("【使用selectAItem 方法】  = {}",appointId);
         // 1.判断appointid是否为空
         if (!StringUtils.isEmpty(appointId)){
             AppointItem item = aItemService.seleceByOne(appointId);
@@ -94,25 +95,71 @@ public class BuyerAItemController {
      */
     @DeleteMapping(value = "/deletetAItem/{id}")
     public CommonResponse deletetAItem(@PathVariable("id")String appointId){
-        log.info("【使用delectAItem】");
+        log.info("【使用delectAItem】 = {}",appointId);
         // 1.判断appointid是否为空
-        if (!StringUtils.isEmpty(appointId)){
+
             int isDelete = aItemService.delectByOne(appointId);
             return ResponseVoUtil.success(isDelete);
-        }
-        // 2. 为空就返回null
-        return null;
+
     }
 
+    /**
+     * 分页
+     * @param offset
+     * @param size
+     * @param itemName
+     * @return
+     */
     @GetMapping(value = "/pagesAItems")
     public CommonResponse pagesAItems(@RequestParam(value = "page",defaultValue = "0")Integer offset,
-                                      @RequestParam(value = "size",defaultValue = "10")Integer size){
+                                      @RequestParam(value = "size",defaultValue = "10")Integer size
+
+                                     ,  @RequestParam(value = "itemName",required = false) String itemName
+    ){
         log.info("【使用pagesAItems】");
-        if (!StringUtils.isEmpty(offset) && !StringUtils.isEmpty(size)){
-            PageInfo<AppointItem> pageInfo = aItemService.selectByPages(offset,size);
+        log.info(" itemName = {}",itemName);
+        PageInfo<AppointItem> pageInfo = aItemService.selectByPages(offset,size,itemName);
+
+
           return   ResponseVoUtil.success(pageInfo);
+    }
+
+    /**
+     * 更新预约服务
+     * @param itemForm
+     * @return
+     */
+    @PostMapping(value = "updateAItem")
+    public CommonResponse updateAItem(@RequestBody AppointItemForm itemForm){
+        log.info("【使用updateAItem】");
+        log.info(" item = {}",itemForm);
+
+        AppointItem item = new AppointItem();
+        if (!StringUtils.isEmpty(itemForm.getItemName())){
+            BeanUtils.copyProperties(itemForm,item);
+            item.setUpdateTime(TimeUtil.getNowDate(new java.util.Date()));
+            int isUpdate = aItemService.updateItem(item);
+            return ResponseVoUtil.success(isUpdate);
         }
         return null;
     }
 
+    /**
+     * 批量删除
+     * @param itemIds
+     * @return
+     */
+    @PostMapping(value = "/batchDelAItem/{itemIds}")
+    public CommonResponse batchDelAItem (@PathVariable("itemIds") String itemIds){
+         log.info("【使用batchDelAItem】");
+         log.info("itemIds =  {}",itemIds);
+         List<String> idsList = new ArrayList<String>();
+         String [] strIds = itemIds.split(",");
+         for (String str : strIds){
+             idsList.add(str);
+         }
+         log.info("idsList = {}",idsList);
+         int isBatch = aItemService.batchDelAItem(idsList);
+        return ResponseVoUtil.success(isBatch);
+    }
 }

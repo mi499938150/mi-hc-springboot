@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.mi.mapper.AItemMapper">
+    <resultMap id="BaseResultMap" type="com.mi.entity.AppointItem">
+        <result column="item_id" jdbcType="VARCHAR" property="itemId"></result>
+        <result column="item_name" jdbcType="VARCHAR" property="itemName"></result>
+        <result column="item_status" jdbcType="INTEGER" property="itemStatus"></result>
+        <result column="item_desc" jdbcType="VARCHAR" property="itemDesc"></result>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"></result>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"></result>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        item_id,item_name,item_status,item_desc,create_time,update_time
+    </sql>
+
+    <!--批量删除-->
+    <delete id="batchDelAItem" parameterType="list" >
+        DELETE FROM appoint_item WHERE item_id IN
+        <foreach collection="list" item="item" open="(" separator="," close=")" index="index">
+            #{item}
+        </foreach>
+    </delete>
+</mapper>

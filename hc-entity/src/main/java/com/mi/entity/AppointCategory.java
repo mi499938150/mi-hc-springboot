@@ -1,5 +1,6 @@
 package com.mi.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import tk.mybatis.mapper.annotation.KeySql;
 
@@ -31,9 +32,11 @@ public class AppointCategory implements Serializable {
     private String category_icon;
 
     /**创建时间**/
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date createTime;
 
     /**修改时间**/
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date updateTime;
 
 }

@@ -19,9 +19,13 @@ mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
   type-aliases-package: com.mi.entity
 
+
 pagehelper:
   helper-dialect: mysql
   reasonable: true
   support-methods-arguments: true
   params: count==countSql
   page-size-zero: true
+logging:
+  level:
+    com.mi.mapper: trace

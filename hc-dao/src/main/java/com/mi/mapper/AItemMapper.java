@@ -1,7 +1,10 @@
 package com.mi.mapper;
 
 import com.mi.entity.AppointItem;
+import org.apache.ibatis.annotations.Param;
 import tk.mybatis.mapper.common.Mapper;
+
+import java.util.List;
 
 /**
  * @author : Rong
@@ -10,4 +13,6 @@ import tk.mybatis.mapper.common.Mapper;
  */
 public interface AItemMapper extends Mapper<AppointItem> {
 
+
+    public int batchDelAItem(List<String> itemIds);
 }
