@@ -25,16 +25,15 @@ import java.util.List;
 /**
  * @author : Rong
  * @date : 2020/4/16
- * @Desc: 预约服务控制器
+ * @Desc: 服务控制器
  */
 
 @RestController
 @Slf4j
 @RequestMapping("/aItem")
-public class BuyerAItemController {
+public class StoreAItemController {
 
-    @Autowired
-    private AServiceService aService;
+
 
     @Autowired
     private AItemService aItemService;
@@ -73,15 +72,15 @@ public class BuyerAItemController {
 
     /**
      * 查询一个Item
-     * @param appointId
+     * @param itemId
      * @return
      */
     @GetMapping(value = "/selectAItem/{id}")
-    public CommonResponse selectAItem(@PathVariable("id")String appointId){
-        log.info("【使用selectAItem 方法】  = {}",appointId);
+    public CommonResponse selectAItem(@PathVariable("id")String itemId){
+        log.info("【使用selectAItem 方法】  = {}",itemId);
         // 1.判断appointid是否为空
-        if (!StringUtils.isEmpty(appointId)){
-            AppointItem item = aItemService.seleceByOne(appointId);
+        if (!StringUtils.isEmpty(itemId)){
+            AppointItem item = aItemService.seleceByOne(itemId);
             return ResponseVoUtil.success(item);
         }
         // 2. 为空就返回null
@@ -90,15 +89,15 @@ public class BuyerAItemController {
 
     /**
      * 删除一个Item
-     * @param appointId
+     * @param itemId
      * @return
      */
     @DeleteMapping(value = "/deletetAItem/{id}")
-    public CommonResponse deletetAItem(@PathVariable("id")String appointId){
-        log.info("【使用delectAItem】 = {}",appointId);
+    public CommonResponse deletetAItem(@PathVariable("id")String itemId){
+        log.info("【使用delectAItem】 = {}",itemId);
         // 1.判断appointid是否为空
 
-            int isDelete = aItemService.delectByOne(appointId);
+            int isDelete = aItemService.delectByOne(itemId);
             return ResponseVoUtil.success(isDelete);
 
     }
@@ -113,13 +112,11 @@ public class BuyerAItemController {
     @GetMapping(value = "/pagesAItems")
     public CommonResponse pagesAItems(@RequestParam(value = "page",defaultValue = "0")Integer offset,
                                       @RequestParam(value = "size",defaultValue = "10")Integer size
-
                                      ,  @RequestParam(value = "itemName",required = false) String itemName
     ){
         log.info("【使用pagesAItems】");
         log.info(" itemName = {}",itemName);
         PageInfo<AppointItem> pageInfo = aItemService.selectByPages(offset,size,itemName);
-
 
           return   ResponseVoUtil.success(pageInfo);
     }

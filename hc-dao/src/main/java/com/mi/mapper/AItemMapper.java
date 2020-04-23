@@ -13,6 +13,10 @@ import java.util.List;
  */
 public interface AItemMapper extends Mapper<AppointItem> {
 
-
+    /**
+     * 批量删除
+     * @param itemIds
+     * @return
+     */
     public int batchDelAItem(List<String> itemIds);
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mi.mapper.WCUserMapper">
+    <resultMap id="BaseResultMap" type="com.mi.entity.WeChatUser">
+        <result column="open_id" jdbcType="VARCHAR" property="openId"></result>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"></result>
+        <result column="province" jdbcType="VARCHAR" property="province"></result>
+        <result column="city" jdbcType="VARCHAR" property="city"></result>
+        <result column="country" jdbcType="VARCHAR" property="country"></result>
+        <result column="head_img_url" jdbcType="VARCHAR" property="headImgUrl"></result>
+        <result column="sex" jdbcType="INTEGER" property="sex"></result>
+        <result column="sex_desc" jdbcType="VARCHAR" property="sexDesc"></result>
+        <result column="language" jdbcType="VARCHAR" property="language"></result>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"></result>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"></result>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        open_id,nick_name,province,city,country,head_img_url,sex,sex_desc,language,create_time,update_time
+    </sql>
+
+    <!--批量删除-->
+    <delete id="batchDelService" parameterType="list" >
+        DELETE FROM wechat_user WHERE open_id IN
+        <foreach collection="list" item="item" open="(" separator="," close=")" index="index">
+            #{item}
+        </foreach>
+    </delete>
+</mapper>

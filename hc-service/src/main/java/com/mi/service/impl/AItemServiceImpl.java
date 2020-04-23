@@ -46,32 +46,38 @@ public class AItemServiceImpl implements AItemService {
 
     /**
      * 查询一个Item
-     * @param appointId
+     * @param itemId
      * @return
      */
     @Override
-    public AppointItem seleceByOne(String appointId) {
-        return aItemMapper.selectByPrimaryKey(appointId);
+    public AppointItem seleceByOne(String itemId) {
+        return aItemMapper.selectByPrimaryKey(itemId);
     }
 
     /**
      * 删除一个Item
-     * @param appointId
+     * @param itemId
      */
     @Override
-    public int delectByOne(String appointId) {
-        return aItemMapper.deleteByPrimaryKey(appointId);
+    public int delectByOne(String itemId) {
+        return aItemMapper.deleteByPrimaryKey(itemId);
     }
 
+    /**
+     * 更新
+     * @param item
+     * @return
+     */
     @Override
     public int updateItem(AppointItem item) {
         return aItemMapper.updateByPrimaryKeySelective(item);
     }
 
     /**
-     * 分页
+     *  分页
      * @param offset
      * @param pageSize
+     * @param itemName
      * @return
      */
     @Override
@@ -79,6 +85,7 @@ public class AItemServiceImpl implements AItemService {
         PageHelper.startPage(offset,pageSize);
         Example example = new Example(AppointItem.class);
         Example.Criteria criteria = example.createCriteria();
+        // 1. 查询keywords 关键字
         if (!StringUtils.isEmpty(itemName) && itemName.length() > 0) {
             log.info("itemName = {}",itemName);
             criteria.andLike("itemName","%"+itemName+"%");

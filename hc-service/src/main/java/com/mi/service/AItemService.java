@@ -17,9 +17,9 @@ public interface AItemService {
 
     public List<AppointItem> selectByItems();
 
-    public AppointItem seleceByOne(String appointId);
+    public AppointItem seleceByOne(String itemId);
 
-    public int delectByOne(String appointId);
+    public int delectByOne(String itemId);
 
     public int updateItem(AppointItem item);
 

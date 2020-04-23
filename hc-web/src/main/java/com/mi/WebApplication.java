@@ -13,7 +13,6 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 @MapperScan("com.mi.mapper")
 public class WebApplication {
-
     public static void main(String args[]){
         SpringApplication.run(WebApplication.class,args);
     }

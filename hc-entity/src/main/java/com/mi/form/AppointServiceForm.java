@@ -1,28 +1,23 @@
-package com.mi.entity;
+package com.mi.form;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import tk.mybatis.mapper.annotation.KeySql;
 
 import javax.persistence.Id;
-import javax.persistence.Table;
-import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Timestamp;
 import java.util.Date;
 
 /**
  * @author : Rong
- * @date : 2020/4/16
- * @Desc: 预约服务
+ * @date : 2020/4/21
+ * @Desc:
  */
+
 @Data
-@Table(name = "appoint_service")
-public class AppointService  implements Serializable {
+public class AppointServiceForm {
 
     /**预约id**/
-    @Id
-    @KeySql(useGeneratedKeys = true) //回显
     private String appointId;
 
     /**预约名称**/
@@ -34,11 +29,11 @@ public class AppointService  implements Serializable {
     /**预约日期**/
 //    private Date appointWeek;
 
-    /**预约时间**/
-    private String appointTime;
-
     /**预约描述**/
     private String appointDesc;
+
+    /**预约时间**/
+    private String appointTime;
 
     /**开启状态 0正常 1关闭**/
     private Integer appointStatus;
@@ -56,5 +51,4 @@ public class AppointService  implements Serializable {
     /**修改时间**/
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date updateTime;
-
 }

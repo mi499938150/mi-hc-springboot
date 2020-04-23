@@ -3,6 +3,8 @@ package com.mi.mapper;
 import com.mi.entity.WeChatUser;
 import tk.mybatis.mapper.common.Mapper;
 
+import java.util.List;
+
 /**
  * @author : Rong
  * @date : 2020/4/16
@@ -10,4 +12,11 @@ import tk.mybatis.mapper.common.Mapper;
  */
 public interface WCUserMapper extends Mapper<WeChatUser> {
 
+
+    /**
+     * 批量删除
+     * @param openIds
+     * @return
+     */
+    public int batchDelService(List<String> openIds);
 }

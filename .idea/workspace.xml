@@ -2,26 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="448ed61a-2bc1-48ad-81d4-1ae4f46a5bad" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AItemMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AServiceMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/WCUserMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointOrderForm.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointServiceForm.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/WCUserService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/WCUserServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreServiceController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreWeChatController.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/TimeUtil.java" afterPath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/TimeUtil.java" />
+      <change beforePath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/keyUtil.java" afterPath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/keyUtil.java" />
+      <change beforePath="$PROJECT_DIR$/hc-common/target/classes/com/mi/utils/TimeUtil.class" afterPath="$PROJECT_DIR$/hc-common/target/classes/com/mi/utils/TimeUtil.class" />
+      <change beforePath="$PROJECT_DIR$/hc-common/target/classes/com/mi/utils/keyUtil.class" afterPath="$PROJECT_DIR$/hc-common/target/classes/com/mi/utils/keyUtil.class" />
       <change beforePath="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AItemMapper.java" afterPath="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AItemMapper.java" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointCancel.java" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointCancel.java" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointCategory.java" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointCategory.java" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointItem.java" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointItem.java" />
+      <change beforePath="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AServiceMapper.java" afterPath="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AServiceMapper.java" />
+      <change beforePath="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/WCUserMapper.java" afterPath="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/WCUserMapper.java" />
+      <change beforePath="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AItemMapper.xml" afterPath="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AItemMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/hc-dao/target/classes/com/mi/mapper/AServiceMapper.class" afterPath="$PROJECT_DIR$/hc-dao/target/classes/com/mi/mapper/AServiceMapper.class" />
+      <change beforePath="$PROJECT_DIR$/hc-dao/target/classes/mapper/AItemMapper.xml" afterPath="$PROJECT_DIR$/hc-dao/target/classes/mapper/AItemMapper.xml" />
       <change beforePath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java" />
       <change beforePath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointService.java" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointService.java" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointCancel.class" afterPath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointCancel.class" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointCategory.class" afterPath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointCategory.class" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointItem.class" afterPath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointItem.class" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointOrder.class" afterPath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointOrder.class" />
+      <change beforePath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/WeChatUser.java" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/WeChatUser.java" />
       <change beforePath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointService.class" afterPath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointService.class" />
+      <change beforePath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/WeChatUser.class" afterPath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/WeChatUser.class" />
       <change beforePath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AItemService.java" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AItemService.java" />
+      <change beforePath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AServiceService.java" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AServiceService.java" />
       <change beforePath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AItemServiceImpl.java" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AItemServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/AItemService.class" afterPath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/AItemService.class" />
+      <change beforePath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AServiceServiceImpl.java" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AServiceServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/AServiceService.class" afterPath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/AServiceService.class" />
       <change beforePath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/impl/AItemServiceImpl.class" afterPath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/impl/AItemServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/BuyerAItemController.java" afterPath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/BuyerAItemController.java" />
+      <change beforePath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/impl/AServiceServiceImpl.class" afterPath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/impl/AServiceServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/WebApplication.java" afterPath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/WebApplication.java" />
+      <change beforePath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/config/CorsFilter.java" afterPath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/config/CorsFilter.java" />
+      <change beforePath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/BuyerAItemController.java" afterPath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreAItemController.java" />
       <change beforePath="$PROJECT_DIR$/hc-web/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/hc-web/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/hc-web/target/classes/com/mi/controller/BuyerAItemController.class" afterPath="$PROJECT_DIR$/hc-web/target/classes/com/mi/controller/BuyerAItemController.class" />
+      <change beforePath="$PROJECT_DIR$/hc-web/target/classes/application.yml" afterPath="$PROJECT_DIR$/hc-web/target/classes/application.yml" />
+      <change beforePath="$PROJECT_DIR$/hc-web/target/classes/com/mi/WebApplication.class" afterPath="$PROJECT_DIR$/hc-web/target/classes/com/mi/WebApplication.class" />
+      <change beforePath="$PROJECT_DIR$/hc-web/target/classes/com/mi/config/CorsFilter.class" afterPath="$PROJECT_DIR$/hc-web/target/classes/com/mi/config/CorsFilter.class" />
+      <change beforePath="$PROJECT_DIR$/hc-web/target/classes/com/mi/controller/BuyerAItemController.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,119 +58,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BuyerAItemController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/BuyerAItemController.java">
+      <file leaf-file-name="StoreWeChatController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreWeChatController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="157" column="33" lean-forward="false" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="33" />
+            <state relative-caret-position="483">
+              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4455#4463#0" expanded="true" />
+                <element signature="e#1863#1871#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AItemServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AItemServiceImpl.java">
+      <file leaf-file-name="WCUserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/WCUserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+            <state relative-caret-position="427">
+              <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1129#1130#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1375#1376#0" expanded="true" />
-                <element signature="e#1436#1437#0" expanded="true" />
-                <element signature="e#1504#1505#0" expanded="true" />
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-web/src/main/resources/application.yml">
+      <file leaf-file-name="AppointService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="450">
+              <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AItemService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AItemService.java">
+      <file leaf-file-name="AppointOrder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+            <state relative-caret-position="427">
+              <caret line="61" column="28" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="61" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AItemMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AItemMapper.xml">
+      <file leaf-file-name="AppointOrderForm.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointOrderForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+            <state relative-caret-position="-382">
+              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoreServiceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreServiceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
               <folding>
-                <marker date="1587391888621" expanded="true" signature="992:1033" ph="DELETE FROM appoint_item... " />
-                <marker date="1587391888621" expanded="true" signature="992:1148" ph="DELETE FROM appoint_item... " />
+                <element signature="e#3913#3921#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AOrderMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java">
+      <file leaf-file-name="AppointServiceForm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointServiceForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/WebApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-web/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AItemMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AItemMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ACancelMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/ACancelMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="318">
+              <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -162,9 +142,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -189,42 +169,52 @@
         <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/hc-dao/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/WeChatUser.java" />
         <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AItemService.java" />
         <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java" />
         <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/ACategoryMapper.java" />
         <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/ACancelMapper.java" />
-        <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/WCUserMapper.java" />
         <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/vo/CommonResponse.java" />
         <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/EnumUtil.java" />
         <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/OrderUtil.java" />
         <option value="$PROJECT_DIR$/hc-common/pom.xml" />
         <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/JsonUtil.java" />
         <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/ResponseVoUtil.java" />
-        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/WebApplication.java" />
         <option value="$PROJECT_DIR$/hc-service/pom.xml" />
         <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/exception/HcException.java" />
         <option value="$PROJECT_DIR$/hc-web/pom.xml" />
         <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/Test.java" />
         <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/exception/GlobalExceptionHc.java" />
-        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/config/CorsFilter.java" />
-        <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AServiceService.java" />
-        <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AServiceMapper.java" />
-        <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AServiceServiceImpl.java" />
         <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/BuyerAServiceController.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointItemForm.java" />
-        <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/TimeUtil.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointItem.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointCancel.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointCategory.java" />
-        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java" />
+        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/BuyerAItemController.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointService.java" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointServiceForm.java" />
+        <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/keyUtil.java" />
+        <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/TimeUtil.java" />
         <option value="$PROJECT_DIR$/hc-web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/config/CorsFilter.java" />
+        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/WebApplication.java" />
         <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AItemMapper.java" />
+        <option value="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AItemMapper.xml" />
         <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AItemService.java" />
         <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AItemServiceImpl.java" />
-        <option value="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AItemMapper.xml" />
-        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/BuyerAItemController.java" />
+        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreAItemController.java" />
+        <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AServiceService.java" />
+        <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AServiceMapper.java" />
+        <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AServiceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AServiceMapper.xml" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/WeChatUser.java" />
+        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreServiceController.java" />
+        <option value="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/WCUserMapper.xml" />
+        <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/WCUserMapper.java" />
+        <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/WCUserService.java" />
+        <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/WCUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreWeChatController.java" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointOrderForm.java" />
       </list>
     </option>
   </component>
@@ -246,11 +236,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="579" />
-    <option name="y" value="153" />
-    <option name="width" value="1546" />
-    <option name="height" value="838" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="79" />
+    <option name="y" value="98" />
+    <option name="width" value="1767" />
+    <option name="height" value="884" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -311,16 +301,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mi" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -692,15 +672,15 @@
       <updated>1586941294167</updated>
       <workItem from="1586941296621" duration="42972000" />
       <workItem from="1587207412300" duration="22553000" />
-      <workItem from="1587345675081" duration="21170000" />
+      <workItem from="1587345675081" duration="48612000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86695000" />
+    <option name="totallyTimeSpent" value="114137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="579" y="153" width="1546" height="838" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -720,10 +700,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.382311" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2941822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28599477" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22760417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -747,109 +727,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper.java" />
-    <entry file="file://$PROJECT_DIR$/hc-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/WCUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/vo/CommonResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/apache-maven/m2/repository/tk/mybatis/mapper-base/1.0.1/mapper-base-1.0.1-sources.jar!/tk/mybatis/mapper/common/base/BaseSelectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/apache-maven/m2/repository/tk/mybatis/mapper-base/1.0.1/mapper-base-1.0.1-sources.jar!/tk/mybatis/mapper/common/BaseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="43" column="15" lean-forward="false" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/apache-maven/m2/repository/tk/mybatis/mapper-base/1.0.1/mapper-base-1.0.1-sources.jar!/tk/mybatis/mapper/common/Mapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/ACategoryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="93" column="72" lean-forward="false" selection-start-line="93" selection-start-column="72" selection-end-line="93" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/exception/HcException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/config/CorsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/apache-maven/m2/repository/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/config/annotation/CorsRegistry.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -867,60 +744,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AServiceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AServiceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointItemForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_202/src.zip!/java/sql/Timestamp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-198">
           <caret line="109" column="11" lean-forward="false" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/keyUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,13 +762,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/TimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="240" column="10" lean-forward="false" selection-start-line="240" selection-start-column="10" selection-end-line="240" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -959,42 +780,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="60" column="67" lean-forward="false" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="49" column="67" lean-forward="false" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/WeChatUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1023,29 +812,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AServiceServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/ResponseVoUtil.java">
+    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#463#464#0" expanded="false" />
-            <element signature="e#499#500#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="144">
+          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="23" />
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1321">
+          <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="47" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1058,34 +860,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/hc-dao/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        <state relative-caret-position="322">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/WebApplication.java">
+    <entry file="file://$PROJECT_DIR$/hc-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="171">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-web/pom.xml">
+    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/keyUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java">
+    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/TimeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="124">
+          <caret line="239" column="33" lean-forward="false" selection-start-line="239" selection-start-column="23" selection-end-line="239" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/vo/CommonResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/ResponseVoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1100,67 +918,248 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hc-web/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="167">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/config/CorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/WebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="43" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointItemForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AItemMapper.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1587565997322" expanded="true" signature="991:1032" ph="DELETE FROM appoint_item... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AServiceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="125" lean-forward="false" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AServiceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="926">
+          <caret line="111" column="12" lean-forward="true" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
+          <folding>
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/WeChatUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreAItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4372#4380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AServiceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AItemService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        <state relative-caret-position="308">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="38" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AServiceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="19" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/WCUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/resources/mapper/WCUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/WCUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AItemServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+        <state relative-caret-position="32">
+          <caret line="90" column="34" lean-forward="false" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#783#784#0" expanded="true" />
             <element signature="e#832#833#0" expanded="true" />
             <element signature="e#942#943#0" expanded="true" />
             <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1375#1376#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1504#1505#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="e#1546#1547#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AItemMapper.xml">
+    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <marker date="1587391888621" expanded="true" signature="992:1033" ph="DELETE FROM appoint_item... " />
-            <marker date="1587391888621" expanded="true" signature="992:1148" ph="DELETE FROM appoint_item... " />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/BuyerAItemController.java">
+    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreWeChatController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="157" column="33" lean-forward="false" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="33" />
+        <state relative-caret-position="483">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4455#4463#0" expanded="true" />
+            <element signature="e#1863#1871#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/WCUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding>
+            <element signature="e#3913#3921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointServiceForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="61" column="28" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="61" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointOrderForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-382">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
