@@ -85,6 +85,7 @@ public class AItemServiceImpl implements AItemService {
         PageHelper.startPage(offset,pageSize);
         Example example = new Example(AppointItem.class);
         Example.Criteria criteria = example.createCriteria();
+
         // 1. 查询keywords 关键字
         if (!StringUtils.isEmpty(itemName) && itemName.length() > 0) {
             log.info("itemName = {}",itemName);

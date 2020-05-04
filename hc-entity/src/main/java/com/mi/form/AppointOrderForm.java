@@ -2,7 +2,7 @@ package com.mi.form;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
- 
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -21,7 +21,7 @@ public class AppointOrderForm {
     private String nickName;
 
     /**客户电话**/
-    private String customer_phone;
+//    private String customer_phone;
 
     /**订单总金额**/
     private BigDecimal orderAmount;
@@ -43,6 +43,9 @@ public class AppointOrderForm {
 
     /**支付状态**/
     private Integer payStatus;
+
+    /**下单时间**/
+    private Date orderDate;
 
     /**创建时间**/
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")

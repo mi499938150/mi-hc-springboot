@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mi.mapper.AOrderMapper">
+
+    <resultMap id="VoResultMap" type="com.mi.vo.OrderVo">
+        <result column="cutomerCount" javaType="INTEGER" property="cutomerCount"></result>
+        <result column="finishCount" javaType="DECIMAL" property="finishCount"></result>
+        <result column="finishAmount" javaType="DECIMAL" property="finishAmount"></result>
+        <result column="cancelCount" javaType="INTEGER" property="cancelCount"></result>
+        <result column="cancelAmount" javaType="DECIMAL" property="cancelAmount"></result>
+    </resultMap>
+
+
+    <resultMap id="customerCountResultMap" type="com.mi.dto.OrderZeroDTO">
+        <result column="cutomerCount" javaType="INTEGER" property="cutomerCount"></result>
+    </resultMap>
+
+    <resultMap id="finishResultMap" type="com.mi.dto.OrderOneDTO">
+        <result column="finishCount" javaType="INTEGER" property="finishCount"></result>
+        <result column="finishAmount" javaType="DECIMAL" property="finishAmount"></result>
+    </resultMap>
+
+    <resultMap id="cancelResultMap" type="com.mi.dto.OrderTwoDTO">
+        <result column="cancelCount" javaType="INTEGER" property="cancelCount"></result>
+        <result column="cancelAmount" javaType="DECIMAL" property="cancelAmount"></result>
+    </resultMap>
+
+    <resultMap id="MapResultMap" type="java.util.HashMap">
+        <result column="order_id" jdbcType="VARCHAR" property="orderId"></result>
+        <result column="open_id" jdbcType="VARCHAR" property="openId"></result>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"></result>
+        <result column="pay_status" jdbcType="INTEGER" property="payStatus"></result>
+        <result column="order_status" jdbcType="INTEGER" property="orderStatus"></result>
+        <result column="payment_type" jdbcType="INTEGER" property="paymentType"></result>
+        <result column="order_amount" jdbcType="DECIMAL" property="orderAmount"></result>
+        <result column="order_date" javaType="DATE" property="orderDate"></result>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"></result>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"></result>
+    </resultMap>
+
+    <resultMap id="BaseResultMap" type="com.mi.entity.AppointOrder">
+        <result column="order_id" jdbcType="VARCHAR" property="orderId"></result>
+        <result column="open_id" jdbcType="VARCHAR" property="openId"></result>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"></result>
+        <result column="pay_status" jdbcType="INTEGER" property="payStatus"></result>
+        <result column="order_status" jdbcType="INTEGER" property="orderStatus"></result>
+        <result column="payment_type" jdbcType="INTEGER" property="paymentType"></result>
+        <result column="order_amount" jdbcType="DECIMAL" property="orderAmount"></result>
+        <result column="order_date" javaType="DATE" property="orderDate"></result>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"></result>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"></result>
+    </resultMap>
+
+    <!--一对多-->
+    <resultMap id="BaseResultPagesMap" type="com.mi.entity.AppointOrder">
+        <result column="order_id" jdbcType="VARCHAR" property="orderId"></result>
+        <result column="open_id" jdbcType="VARCHAR" property="openId"></result>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"></result>
+        <result column="order_status" jdbcType="INTEGER" property="orderStatus"></result>
+        <result column="pay_status" jdbcType="INTEGER" property="payStatus"></result>
+        <result column="payment_type" jdbcType="INTEGER" property="paymentType"></result>
+        <result column="order_amount" jdbcType="DECIMAL" property="orderAmount"></result>
+        <result column="order_date" javaType="DATE" property="orderDate"></result>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"></result>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"></result>
+        <association property="orderDetailList" javaType="com.mi.entity.AppointOrderDetail">
+            <result column="detail_id" jdbcType="VARCHAR" property="detailId"></result>
+            <result column="order_id" jdbcType="VARCHAR" property="orderId"></result>
+            <result column="appoint_id" jdbcType="VARCHAR" property="appointId"></result>
+            <result column="appoint_name" jdbcType="VARCHAR" property="appointName"></result>
+            <result column="appoint_price" jdbcType="DECIMAL" property="appointPrice"></result>
+            <result column="appoint_quantity" jdbcType="INTEGER" property="appointQuantity"></result>
+            <result column="appoint_time" jdbcType="TIMESTAMP" property="appointTime"></result>
+            <result column="create_time" jdbcType="TIMESTAMP" property="createTime"></result>
+            <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"></result>
+        </association>
+    </resultMap>
+
+    <!--查询订单列表-->
+    <select id="selectTotalPage"  resultMap="BaseResultMap">
+         select order_date,order_id,nick_name,order_amount,order_status,payment_type,pay_status from appoint_order
+        <where>
+            <!--默认查询本周-->
+            <choose>
+                <when test="orderDate != null and orderDate !=''">
+                    <!--查询本周-->
+                    <if test="orderDate == 0">
+                         WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                    </if>
+                    <!--查询上周-->
+                    <if test="orderDate == 1">
+                           WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
+                    </if>
+                    <!--查询本月-->
+                    <if test="orderDate == 2">
+                          DATE_FORMAT( order_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' )
+                    </if>
+                    <!--查询上月-->
+                    <if test="orderDate == 3">
+                        PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
+                    </if>
+                </when>
+                <!--默认查询本周-->
+                <otherwise>
+                     WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!--根据订单状态和日期查询用户的总数量-->
+    <select id="customerCount" resultMap="customerCountResultMap" parameterType="java.lang.String">
+        SELECT COALESCE (SUM(IF(order_status = 1,TRUE,0)),0)  as cutomerCount from appoint_order
+        WHERE
+            order_status = 0
+         <choose>
+
+             <when test="orderDate != null and orderDate !=''">
+                 <!--查询本周-->
+                 <if test="orderDate == 0">
+                     and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                 </if>
+                 <!--查询上周-->
+                 <if test="orderDate == 1">
+                     and   WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
+                 </if>
+                 <!--查询本月-->
+                 <if test="orderDate == 2">
+                     and    DATE_FORMAT( order_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' )
+                 </if>
+                 <!--查询上月-->
+                 <if test="orderDate == 3">
+                     and PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
+                 </if>
+             </when>
+             <!--默认查询本周-->
+             <otherwise>
+                 and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+             </otherwise>
+         </choose>
+
+    </select>
+
+    <!--根据订单状态和日期查询完成订单的总数量和金额-->
+    <select id="finishCount" resultMap="finishResultMap"   parameterType="java.lang.String">
+        SELECT COALESCE (SUM(IF(order_status = 1,TRUE,0)),0)  as finishCount,SUM(order_amount) as finishAmount from appoint_order
+        WHERE
+        order_status = 1
+        <choose>
+            <when test="orderDate != null and orderDate !=''">
+                <!--查询本周-->
+                <if test="orderDate == 0">
+                    and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                </if>
+                <!--查询上周-->
+                <if test="orderDate == 1">
+                    and   WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
+                </if>
+                <!--查询本月-->
+                <if test="orderDate == 2">
+                    and    DATE_FORMAT( order_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' )
+                </if>
+                <!--查询上月-->
+                <if test="orderDate == 3">
+                    and PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
+                </if>
+            </when>
+            <!--默认查询本周-->
+            <otherwise>
+                and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+            </otherwise>
+        </choose>
+
+    </select>
+
+    <!--根据订单状态和日期查询取消订单的总数量和金额-->
+    <select id="cancelCount" resultMap="cancelResultMap" parameterType="java.lang.String">
+        SELECT COALESCE (SUM(IF(order_status = 2,TRUE,0)),0)  as cancelCount,SUM(order_amount) as cancelAmount from appoint_order
+        WHERE
+        order_status = 2
+        <choose>
+            <when test="orderDate != null and orderDate !=''">
+                <!--查询本周-->
+                <if test="orderDate == 0">
+                    and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                </if>
+                <!--查询上周-->
+                <if test="orderDate == 1">
+                    and   WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
+                </if>
+                <!--查询本月-->
+                <if test="orderDate == 2">
+                   and DATE_FORMAT( order_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' )
+                </if>
+                <!--查询上月-->
+                <if test="orderDate == 3">
+                  and PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
+                </if>
+            </when>
+            <!--默认查询本周-->
+            <otherwise>
+                and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+            </otherwise>
+        </choose>
+
+    </select>
+
+
+    <!--一对多分页sql-->
+    <sql id="Base_Column_pages_List">
+        SELECT o.order_id,o.open_id,o.nick_name,o.order_status,o.payment_type,o.pay_status,o.order_amount,o.order_date,o.create_time,o.update_time,
+        d.detail_id,d.order_id as D_id,d.appoint_id,d.appoint_name,d.appoint_price,d.appoint_quantity,d.appoint_time,
+        d.create_time as D_create_time,d.update_time as D_update_time
+        FROM appoint_order o  LEFT JOIN appoint_order_detail d ON o.order_id = d.order_id
+    </sql>
+
+    <select id="selectByPages" resultMap="BaseResultPagesMap">
+       <include refid="Base_Column_pages_List"></include>
+        <where>
+            <if test="nickName !=null and nickName != ''">
+                and nick_name LIKE '%${nickName}%'
+            </if>
+            <if test="orderStatus !=null">
+                and order_status = #{orderStatus}
+            </if>
+        </where>
+    </select>
+
+
+    <!--删除一对一，订单表和订单详情表记录   参数参数String类型、返回类型为int类型-->
+    <delete id="deleteByOne"  parameterType="java.lang.String"  >
+        DELETE  o.*,d.*
+        FROM appoint_order o LEFT JOIN appoint_order_detail d
+        ON  o.order_id = d.order_id
+        WHERE o.order_id = #{orderId}
+    </delete>
+
+    <!-- 一对一  批量删除 -->
+    <delete id="batchDelAOrder" parameterType="list">
+        DELETE  o.*,d.*
+        FROM appoint_order o LEFT JOIN appoint_order_detail d
+        ON  o.order_id = d.order_id
+        WHERE o.order_id IN
+        <foreach collection="list" item="item" open="(" separator="," close=")" index="index">
+            #{item}
+        </foreach>
+    </delete>
+
+</mapper>
