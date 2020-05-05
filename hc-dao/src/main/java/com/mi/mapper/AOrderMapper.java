@@ -23,13 +23,13 @@ public interface AOrderMapper extends Mapper<AppointOrder> {
     //查询订单列表
     public List<AppointOrder> selectTotalPage(@Param("orderDate") String orderDate);
     //根据订单状态和日期查询用户的总数量
-    public OrderZeroDTO customerCount(@Param("orderDate") String orderDate);
+    public OrderZeroDTO customerCount(@Param("orderDate") String orderDate,@Param("theStartTime") String theStartTime,@Param("theEndTime")String theEndTime);
 
     //根据订单状态和日期查询完成订单的总数量和金额
-    public OrderOneDTO finishCount(@Param("orderDate") String orderDate);
+    public OrderOneDTO finishCount(@Param("orderDate") String orderDate,@Param("theStartTime") String theStartTime,@Param("theEndTime")String theEndTime);
 
     //根据订单状态和日期查询取消订单的总数量和金额
-    public OrderTwoDTO cancelCount(@Param("orderDate") String orderDate);
+    public OrderTwoDTO cancelCount(@Param("orderDate") String orderDate,@Param("theStartTime") String theStartTime,@Param("theEndTime")String theEndTime);
 
 
     /**

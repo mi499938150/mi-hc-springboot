@@ -111,19 +111,17 @@
 
     <!--根据订单状态和日期查询用户的总数量-->
     <select id="customerCount" resultMap="customerCountResultMap" parameterType="java.lang.String">
-        SELECT COALESCE (SUM(IF(order_status = 1,TRUE,0)),0)  as cutomerCount from appoint_order
+        SELECT COALESCE (SUM(IF(order_status = 0,TRUE,0)),0)  as cutomerCount from appoint_order
         WHERE
-            order_status = 0
          <choose>
-
              <when test="orderDate != null and orderDate !=''">
                  <!--查询本周-->
                  <if test="orderDate == 0">
-                     and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                      WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
                  </if>
                  <!--查询上周-->
                  <if test="orderDate == 1">
-                     and   WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
+                        WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
                  </if>
                  <!--查询本月-->
                  <if test="orderDate == 2">
@@ -131,79 +129,93 @@
                  </if>
                  <!--查询上月-->
                  <if test="orderDate == 3">
-                     and PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
+                      PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
                  </if>
+             </when>
+             <!--查询日期范围-->
+             <when test="theStartTime != null and theEndTime != null">
+                 date_format(order_date,'%Y-%m-%d') between #{theStartTime} and #{theEndTime}
              </when>
              <!--默认查询本周-->
              <otherwise>
-                 and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                  WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
              </otherwise>
          </choose>
-
+           and order_status = 0
     </select>
 
     <!--根据订单状态和日期查询完成订单的总数量和金额-->
     <select id="finishCount" resultMap="finishResultMap"   parameterType="java.lang.String">
         SELECT COALESCE (SUM(IF(order_status = 1,TRUE,0)),0)  as finishCount,SUM(order_amount) as finishAmount from appoint_order
         WHERE
-        order_status = 1
         <choose>
             <when test="orderDate != null and orderDate !=''">
                 <!--查询本周-->
+
                 <if test="orderDate == 0">
-                    and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                     WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
                 </if>
                 <!--查询上周-->
                 <if test="orderDate == 1">
-                    and   WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
+                   WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
                 </if>
                 <!--查询本月-->
                 <if test="orderDate == 2">
-                    and    DATE_FORMAT( order_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' )
+                    DATE_FORMAT( order_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' )
                 </if>
                 <!--查询上月-->
                 <if test="orderDate == 3">
-                    and PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
+                  PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
                 </if>
+            </when>
+            <!--查询日期范围-->
+            <when test="theStartTime != null and theEndTime != null">
+                date_format(order_date,'%Y-%m-%d') between #{theStartTime} and #{theEndTime}
             </when>
             <!--默认查询本周-->
             <otherwise>
-                and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+               WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
             </otherwise>
         </choose>
 
+       and order_status = 1
     </select>
 
     <!--根据订单状态和日期查询取消订单的总数量和金额-->
     <select id="cancelCount" resultMap="cancelResultMap" parameterType="java.lang.String">
         SELECT COALESCE (SUM(IF(order_status = 2,TRUE,0)),0)  as cancelCount,SUM(order_amount) as cancelAmount from appoint_order
         WHERE
-        order_status = 2
+
         <choose>
             <when test="orderDate != null and orderDate !=''">
+
                 <!--查询本周-->
                 <if test="orderDate == 0">
-                    and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                      WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
                 </if>
                 <!--查询上周-->
                 <if test="orderDate == 1">
-                    and   WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
+                        WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1
                 </if>
                 <!--查询本月-->
                 <if test="orderDate == 2">
-                   and DATE_FORMAT( order_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' )
+                     DATE_FORMAT( order_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' )
                 </if>
                 <!--查询上月-->
                 <if test="orderDate == 3">
-                  and PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
+                    PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1
                 </if>
+            </when>
+            <!--查询日期范围-->
+            <when test="theStartTime != null and theEndTime != null">
+                date_format(order_date,'%Y-%m-%d') between #{theStartTime} and #{theEndTime}
             </when>
             <!--默认查询本周-->
             <otherwise>
-                and WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
+                  WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())
             </otherwise>
         </choose>
-
+       and order_status = 2
     </select>
 
 

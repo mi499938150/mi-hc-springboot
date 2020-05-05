@@ -7,6 +7,8 @@ import com.mi.dto.OrderTwoDTO;
 import com.mi.dto.OrderZeroDTO;
 import com.mi.entity.AppointOrder;
 import com.mi.entity.AppointOrderCount;
+import com.mi.excel.AOrderReportDataDTO;
+import com.mi.excel.AOrderReportParam;
 
 import java.util.HashMap;
 import java.util.List;
@@ -19,16 +21,21 @@ import java.util.Map;
  */
 public interface AOrderService {
 
+    public AOrderReportDataDTO selectByAOderRerpotDataDTO(AOrderReportParam param);
+
+    // 获取导出订单列表数据
+    public List<AppointOrder> selectByAOderRerpotData(String orderDate, String time);
+
     //查看订单列表分页
-    public PageInfo<AppointOrder> selectTotalPage(Integer offset, Integer pageSize,String orderDate);
+    public PageInfo<AppointOrder> selectTotalPage(Integer offset, Integer pageSize,String orderDate,String time);
     //根据订单状态和日期查询用户的总数量
-    public OrderZeroDTO customerCount(String orderDate);
+    public OrderZeroDTO customerCount(String orderDate,String time);
 
     //根据订单状态和日期查询完成订单的总数量和金额
-    public OrderOneDTO finishCount(String orderDate);
+    public OrderOneDTO finishCount(String orderDate,String time);
 
     //根据订单状态和日期查询取消订单的总数量和金额
-    public OrderTwoDTO cancelCount(String orderDate);
+    public OrderTwoDTO cancelCount(String orderDate,String time);
 
 
 

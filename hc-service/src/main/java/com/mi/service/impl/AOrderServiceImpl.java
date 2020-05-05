@@ -12,6 +12,8 @@ import com.mi.entity.AppointOrderCount;
 import com.mi.entity.AppointOrderDetail;
 import com.mi.enums.OrderStatusEnum;
 import com.mi.enums.ResultEnum;
+import com.mi.excel.AOrderReportDataDTO;
+import com.mi.excel.AOrderReportParam;
 import com.mi.exception.HctException;
 import com.mi.mapper.AOrderDetailMapper;
 import com.mi.mapper.AOrderMapper;
@@ -36,18 +38,32 @@ import java.util.Map;
 @Service
 public class AOrderServiceImpl  implements AOrderService {
 
+
+
     @Autowired
     private AOrderMapper aOrderMapper;
 
     @Autowired
     private AOrderDetailMapper aOrderDetailMapper;
 
-    // 订单列表分页
     @Override
-    public PageInfo<AppointOrder> selectTotalPage(Integer offset, Integer pageSize, String orderDate) {
-        PageHelper.startPage(offset,pageSize);
+    public AOrderReportDataDTO selectByAOderRerpotDataDTO(AOrderReportParam param) {
+        AOrderReportDataDTO reportDataDTO = new AOrderReportDataDTO();
+        // 1. 获取当前订单统计数据
+        BeanUtils.copyProperties(param,reportDataDTO);
+        // 2. 获取订单数据列表
+        List<AppointOrder> orders = this.selectByAOderRerpotData(param.getOrderDate(),param.getTime());
+        // 3. 拼装数据
+        reportDataDTO.setAppoints(orders);
+        return reportDataDTO;
+    }
+
+    //获取导出订单列表数据
+    @Override
+    public List<AppointOrder> selectByAOderRerpotData(String orderDate, String time) {
         Example example = new Example(AppointOrder.class);
         Example.Criteria criteria = example.createCriteria();
+        // 1. 判断统计周、月
         if (!StringUtils.isEmpty(orderDate) && orderDate.length() > 0){
             log.info("orderDate = {}",orderDate);
             // 查询本周
@@ -70,27 +86,132 @@ public class AOrderServiceImpl  implements AOrderService {
                 log.info("查询上月");
                 criteria.andCondition("PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1");
             }
-        }else {
+        }
+        // 2. 判断日期范围
+        // 判断开始时间
+        else   if (!StringUtils.isEmpty(time) && time.length() > 0) {
+            log.info("查询时间范围");
+            // 截图时间范围 time=2020-05-07 - 2020-06-03
+            // 截取开始时间
+            String theStartTime = time.substring(0,10);
+            // 截取结束时间
+            String theEndTime = time.substring(13,23);
+            log.info("theStartTime = {}  theEndTime = {}",theStartTime,theEndTime);
+            criteria.andCondition("date_format(order_date,'%Y-%m-%d')").andBetween("orderDate",theStartTime,theEndTime);
+        }
+        else {
+            log.info("查询默认");
             criteria.andCondition("WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())");
         }
+        // 按时间降序
+        example.setOrderByClause("order_date ASC");
+        List<AppointOrder> orders = aOrderMapper.selectByExample(example);
+        return orders;
+    }
+
+    // 订单列表分页
+    @Override
+    public PageInfo<AppointOrder> selectTotalPage(Integer offset, Integer pageSize, String orderDate,String time) {
+        PageHelper.startPage(offset,pageSize);
+        Example example = new Example(AppointOrder.class);
+        Example.Criteria criteria = example.createCriteria();
+        // 1. 判断统计周、月
+        if (!StringUtils.isEmpty(orderDate) && orderDate.length() > 0){
+            log.info("orderDate = {}",orderDate);
+            // 查询本周
+            if (orderDate .equals("0")){
+                log.info("查询本周");
+                criteria.andCondition("WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())");
+            }
+            // 查询上周
+            if (orderDate .equals("1")){
+                log.info("查询上周");
+                criteria.andCondition("WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(now())-1");
+            }
+            // 查询本月
+            if (orderDate .equals("2")){
+                log.info("查询本月");
+                criteria.andCondition(" DATE_FORMAT( order_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) ,'%Y%m' )");
+            }
+            // 查询上月
+            if (orderDate .equals("3")){
+                log.info("查询上月");
+                criteria.andCondition("PERIOD_DIFF( date_format( now( ),'%Y%m' ),date_format( order_date, '%Y%m' ) ) =1");
+            }
+
+        }
+        // 2. 判断日期范围
+        // 判断开始时间
+     else   if (!StringUtils.isEmpty(time) && time.length() > 0) {
+            log.info("查询时间范围");
+            // 截图时间范围 time=2020-05-07 - 2020-06-03
+            // 截取开始时间
+            String theStartTime = time.substring(0,10);
+            // 截取结束时间
+            String theEndTime = time.substring(13,23);
+            log.info("theStartTime = {}  theEndTime = {}",theStartTime,theEndTime);
+            criteria.andCondition("date_format(order_date,'%Y-%m-%d')").andBetween("orderDate",theStartTime,theEndTime);
+        }
+        else {
+            log.info("查询默认");
+            criteria.andCondition("WEEK(DATE_FORMAT(order_date,'%Y-%m-%d')) = WEEK(NOW())");
+        }
+        // 按时间降序
+        example.setOrderByClause("order_date ASC");
         List<AppointOrder>  orderList = aOrderMapper.selectByExample(example);
         PageInfo<AppointOrder> pageInfo = new PageInfo<>(orderList);
         return pageInfo;
     }
 
     @Override
-    public OrderZeroDTO customerCount(String orderDate) {
-        return aOrderMapper.customerCount(orderDate);
+    public OrderZeroDTO customerCount(String orderDate,String time) {
+        // 声明开始时间和结束时间
+        if (!StringUtils.isEmpty(time) && time.length() > 0) {
+            log.info("查询时间范围");
+            // 截图时间范围 time=2020-05-07 - 2020-06-03
+            // 截取开始时间
+         String    theStartTime = time.substring(0,10);
+            // 截取结束时间
+         String    theEndTime = time.substring(13,23);
+            log.info("theStartTime = {}  theEndTime = {}",theStartTime,theEndTime);
+            return aOrderMapper.customerCount(orderDate,theStartTime,theEndTime);
+        }
+
+        return aOrderMapper.customerCount(orderDate,null,null);
     }
 
     @Override
-    public OrderOneDTO finishCount(String orderDate) {
-        return aOrderMapper.finishCount(orderDate);
+    public OrderOneDTO finishCount(String orderDate,String time) {
+
+        if (!StringUtils.isEmpty(time) && time.length() > 0) {
+            log.info("查询时间范围");
+            // 截图时间范围 time=2020-05-07 - 2020-06-03
+            // 截取开始时间
+            String    theStartTime = time.substring(0,10);
+            // 截取结束时间
+            String    theEndTime = time.substring(13,23);
+            log.info("theStartTime = {}  theEndTime = {}",theStartTime,theEndTime);
+            return aOrderMapper.finishCount(orderDate,theStartTime,theEndTime);
+        }
+
+        return aOrderMapper.finishCount(orderDate,null,null);
     }
 
     @Override
-    public OrderTwoDTO cancelCount(String orderDate) {
-        return aOrderMapper.cancelCount(orderDate);
+    public OrderTwoDTO cancelCount(String orderDate,String time) {
+
+        if (!StringUtils.isEmpty(time) && time.length() > 0) {
+            log.info("查询时间范围");
+            // 截图时间范围 time=2020-05-07 - 2020-06-03
+            // 截取开始时间
+            String    theStartTime = time.substring(0,10);
+            // 截取结束时间
+            String    theEndTime = time.substring(13,23);
+            log.info("theStartTime = {}  theEndTime = {}",theStartTime,theEndTime);
+            return aOrderMapper.cancelCount(orderDate,theStartTime,theEndTime);
+        }
+
+        return aOrderMapper.cancelCount(orderDate,null,null);
     }
 
     // 订单取消

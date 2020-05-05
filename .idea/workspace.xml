@@ -2,37 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="448ed61a-2bc1-48ad-81d4-1ae4f46a5bad" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/enums/CodeEnum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/enums/OrderStatusEnum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/enums/PayStatusEnum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/enums/ResultEnum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/exception/HctException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/vo/OrderVo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderDetailMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AOrderMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/converter/AppointOrderDtoConverter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/converter/OrderVoConverter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderDTO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderOneDTO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderTwoDTO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderZeroDTO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrderCount.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrderDetail.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AOrderService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AOrderServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreOrderController.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jxls_jxls_core_1_0_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jexcelapi_jxl_2_6_10.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_digester3_with_deps_3_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_jexl3_3_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_jexl_2_0_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jxls_jxls_2_8_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jxls_jxls_jexcel_1_0_9.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jxls_jxls_reader_2_0_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/AOrderReportDataDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/AOrderReportParam.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/OrderAppoint.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hc-web/src/main/resources/templates/excel/order_report_template.xlsx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/EnumUtil.java" afterPath="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/EnumUtil.java" />
-      <change beforePath="$PROJECT_DIR$/hc-dao/hc-dao.iml" afterPath="$PROJECT_DIR$/hc-dao/hc-dao.iml" />
+      <change beforePath="$PROJECT_DIR$/hc-common/pom.xml" afterPath="$PROJECT_DIR$/hc-common/pom.xml" />
       <change beforePath="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java" afterPath="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java" />
+      <change beforePath="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AOrderMapper.xml" afterPath="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AOrderMapper.xml" />
       <change beforePath="$PROJECT_DIR$/hc-dao/target/classes/com/mi/mapper/AOrderMapper.class" afterPath="$PROJECT_DIR$/hc-dao/target/classes/com/mi/mapper/AOrderMapper.class" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/hc-entity.iml" afterPath="$PROJECT_DIR$/hc-entity/hc-entity.iml" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/pom.xml" afterPath="$PROJECT_DIR$/hc-entity/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/hc-dao/target/classes/mapper/AOrderMapper.xml" afterPath="$PROJECT_DIR$/hc-dao/target/classes/mapper/AOrderMapper.xml" />
       <change beforePath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointOrderForm.java" afterPath="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointOrderForm.java" />
-      <change beforePath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointOrder.class" afterPath="$PROJECT_DIR$/hc-entity/target/classes/com/mi/entity/AppointOrder.class" />
-      <change beforePath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AItemServiceImpl.java" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AItemServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AOrderService.java" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AOrderService.java" />
+      <change beforePath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AOrderServiceImpl.java" afterPath="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AOrderServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/AOrderService.class" afterPath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/AOrderService.class" />
+      <change beforePath="$PROJECT_DIR$/hc-service/target/classes/com/mi/service/impl/AOrderServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hc-web/hc-web.iml" afterPath="$PROJECT_DIR$/hc-web/hc-web.iml" />
+      <change beforePath="$PROJECT_DIR$/hc-web/pom.xml" afterPath="$PROJECT_DIR$/hc-web/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreOrderController.java" afterPath="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreOrderController.java" />
+      <change beforePath="$PROJECT_DIR$/hc-web/target/classes/com/mi/controller/StoreOrderController.class" afterPath="$PROJECT_DIR$/hc-web/target/classes/com/mi/controller/StoreOrderController.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,132 +64,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="StoreOrderController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hc-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoreOrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="55" column="54" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="54" />
+            <state relative-caret-position="503">
+              <caret line="71" column="47" lean-forward="true" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1923#1939#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AOrderMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AOrderMapper.xml">
+      <file leaf-file-name="AppointOrder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="100" column="24" lean-forward="false" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="104" />
-              <folding>
-                <marker date="1588510349496" expanded="true" signature="5349:5454" ph="select order... appoint_order" />
-                <marker date="1588510349496" expanded="true" signature="5349:5509" ph="select order... appoint_order" />
-                <marker date="1588510349496" expanded="true" signature="6748:6836" ph="SELECT SUM(I... appoint_order" />
-                <marker date="1588510349496" expanded="true" signature="6748:7909" ph="SELECT SUM(I... appoint_order" />
-                <marker date="1588510349496" expanded="true" signature="8060:8220" ph="SELECT SUM(I... appoint_order" />
-                <marker date="1588510349496" expanded="true" signature="9374:9534" ph="SELECT SUM(I... appoint_order" />
-                <marker date="1588510349496" expanded="true" signature="10616:11033" ph="SELECT o.*, appoint_order" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AOrderServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AOrderServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="72" column="15" lean-forward="true" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2883#2884#0" expanded="true" />
-                <element signature="e#2943#2944#0" expanded="true" />
-                <element signature="e#3013#3014#0" expanded="true" />
-                <element signature="e#3071#3072#0" expanded="true" />
-                <element signature="e#3141#3142#0" expanded="true" />
-                <element signature="e#3199#3200#0" expanded="true" />
-                <element signature="e#4721#4722#0" expanded="true" />
-                <element signature="e#4777#4778#0" expanded="true" />
-                <element signature="e#6017#6018#0" expanded="true" />
-                <element signature="e#6077#6078#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderVoConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/converter/OrderVoConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state relative-caret-position="103">
+              <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AOrderService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AOrderService.java">
+      <file leaf-file-name="AOrderReportDataDTO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/AOrderReportDataDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-392">
-              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="563">
+              <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AOrderMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderVo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/vo/OrderVo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderOneDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderOneDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderTwoDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderTwoDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderZeroDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderZeroDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -197,6 +124,7 @@
       <find>cancel</find>
       <find>customerCountResultMap</find>
       <find>finishResultMap</find>
+      <find>org.springframework.util.StreamUtils;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,13 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointCancel.java" />
-        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointCategory.java" />
-        <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/BuyerAItemController.java" />
-        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointService.java" />
-        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/form/AppointServiceForm.java" />
-        <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/keyUtil.java" />
-        <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/utils/TimeUtil.java" />
         <option value="$PROJECT_DIR$/hc-web/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/config/CorsFilter.java" />
         <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/WebApplication.java" />
@@ -255,17 +176,24 @@
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderDTO.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrderCount.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderZeroDTO.java" />
-        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java" />
         <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AItemServiceImpl.java" />
-        <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AOrderService.java" />
-        <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderOneDTO.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderTwoDTO.java" />
         <option value="$PROJECT_DIR$/hc-common/src/main/java/com/mi/vo/OrderVo.java" />
         <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/converter/OrderVoConverter.java" />
+        <option value="$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/OrderAppointt.java" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/OrderAppoint.java" />
         <option value="$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AOrderMapper.xml" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/OrderTotal.java" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/AOrderReportParam.java" />
+        <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AOrderService.java" />
+        <option value="$PROJECT_DIR$/hc-common/pom.xml" />
+        <option value="$PROJECT_DIR$/hc-web/pom.xml" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/AOrderReportDataDTO.java" />
         <option value="$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AOrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreOrderController.java" />
+        <option value="$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java" />
       </list>
     </option>
   </component>
@@ -288,10 +216,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="686" />
-    <option name="y" value="16" />
-    <option name="width" value="1689" />
-    <option name="height" value="912" />
+    <option name="x" value="367" />
+    <option name="y" value="54" />
+    <option name="width" value="1693" />
+    <option name="height" value="897" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -326,118 +254,6 @@
             <path>
               <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mi" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mi" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mi" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
               <item name="hc-entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -469,16 +285,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mi" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -493,47 +299,12 @@
             <path>
               <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-service" type="462c0819:PsiDirectoryNode" />
+              <item name="hc-entity" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
-              <item name="hc-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="mi" type="462c0819:PsiDirectoryNode" />
+              <item name="excel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -587,6 +358,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mi-hc-springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="hc-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="excel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mi-hc-springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -754,19 +534,19 @@
       <updated>1586941294167</updated>
       <workItem from="1586941296621" duration="42972000" />
       <workItem from="1587207412300" duration="22553000" />
-      <workItem from="1587345675081" duration="150363000" />
+      <workItem from="1587345675081" duration="198345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215888000" />
+    <option name="totallyTimeSpent" value="263870000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="686" y="16" width="1689" height="912" extended-state="0" />
+    <frame x="367" y="54" width="1693" height="897" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42064515" sideWeight="0.50209457" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -776,18 +556,19 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3223684" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42064515" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42894736" sideWeight="0.49790543" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26152006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26089552" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -795,7 +576,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -806,94 +586,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/WeChatUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/WCUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/WCUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreWeChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1863#1871#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/WCUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="59" column="22" lean-forward="false" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#765#766#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-          <folding>
-            <element signature="e#3913#3921#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/enums/CodeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/vo/CommonResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/vo/OrderVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -946,14 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AServiceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="111" column="12" lean-forward="true" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1038,14 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="31" column="95" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreAItemController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-58">
@@ -1062,26 +743,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/apache-maven/m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.16/tomcat-embed-core-9.0.16.jar!/org/apache/coyote/AbstractProcessorLight.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1144,20 +809,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderOneDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1167,7 +824,7 @@
         <state relative-caret-position="287">
           <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1177,16 +834,8 @@
         <state relative-caret-position="322">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/vo/OrderVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,67 +847,245 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="31" column="95" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hc-dao/src/main/java/com/mi/mapper/AOrderMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        <state relative-caret-position="161">
+          <caret line="25" column="155" lean-forward="false" selection-start-line="25" selection-start-column="145" selection-end-line="25" selection-end-column="155" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AOrderService.java">
+    <entry file="file://$PROJECT_DIR$/hc-common/src/main/java/com/mi/vo/OrderVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-392">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="230">
+          <caret line="28" column="36" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="28" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/dto/OrderDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hc-dao/src/main/resources/mapper/AOrderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="100" column="24" lean-forward="false" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="104" />
+        <state relative-caret-position="613">
+          <caret line="105" column="75" lean-forward="false" selection-start-line="105" selection-start-column="75" selection-end-line="105" selection-end-column="75" />
           <folding>
-            <marker date="1588510349496" expanded="true" signature="5349:5454" ph="select order... appoint_order" />
-            <marker date="1588510349496" expanded="true" signature="5349:5509" ph="select order... appoint_order" />
-            <marker date="1588510349496" expanded="true" signature="6748:6836" ph="SELECT SUM(I... appoint_order" />
-            <marker date="1588510349496" expanded="true" signature="6748:7909" ph="SELECT SUM(I... appoint_order" />
-            <marker date="1588510349496" expanded="true" signature="8060:8220" ph="SELECT SUM(I... appoint_order" />
-            <marker date="1588510349496" expanded="true" signature="9374:9534" ph="SELECT SUM(I... appoint_order" />
-            <marker date="1588510349496" expanded="true" signature="10616:11033" ph="SELECT o.*, appoint_order" />
+            <marker date="1588653866326" expanded="true" signature="5349:5454" ph="select order... appoint_order" />
+            <marker date="1588653866326" expanded="true" signature="6748:8111" ph="SELECT COALE... appoint_order" />
+            <marker date="1588653866326" expanded="true" signature="8262:9584" ph="SELECT COALE... appoint_order" />
+            <marker date="1588653866326" expanded="true" signature="8262:9612" ph="SELECT COALE... appoint_order" />
+            <marker date="1588653866326" expanded="true" signature="9761:11107" ph="SELECT COALE... appoint_order" />
+            <marker date="1588653866326" expanded="true" signature="9761:11123" ph="SELECT COALE... appoint_order" />
+            <marker date="1588653866326" expanded="true" signature="11206:11623" ph="SELECT o.ord... appoint_order" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/AOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" column="75" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AServiceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="88" column="20" lean-forward="false" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/AOrderReportParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/OrderAppoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/apache-maven/m2/repository/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding>
+            <marker date="1571537711698" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1571537711698" expanded="false" signature="162:754" ph="..." />
+            <marker date="1571537711698" expanded="false" signature="1216:1227" ph=" { " />
+            <marker date="1571537711698" expanded="false" signature="1248:1254" ph=" }" />
+            <marker date="1571537711698" expanded="false" signature="1317:1328" ph=" { " />
+            <marker date="1571537711698" expanded="false" signature="1348:1354" ph=" }" />
+            <marker date="1571537711698" expanded="true" signature="1476:1532" ph="{...}" />
+            <marker date="1571537711698" expanded="true" signature="1611:1670" ph="{...}" />
+            <marker date="1571537711698" expanded="true" signature="1780:1831" ph="{...}" />
+            <marker date="1571537711698" expanded="true" signature="1925:1996" ph="{...}" />
+            <marker date="1571537711698" expanded="true" signature="2160:2419" ph="{...}" />
+            <marker date="1571537711698" expanded="true" signature="2581:4058" ph="{...}" />
+            <marker date="1571537711698" expanded="true" signature="4137:5229" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/apache-maven/m2/repository/net/sf/jxls/jxls-core/1.0.6/jxls-core-1.0.6.jar!/net/sf/jxls/transformer/XLSTransformer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding>
+            <marker date="1588658570159" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1588658570159" expanded="false" signature="147:1462" ph="..." />
+            <marker date="1588658570159" expanded="true" signature="2180:2300" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="2366:2470" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="2539:2646" ph="{...}" />
+            <marker date="1588658570159" expanded="false" signature="2712:2723" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="2769:2775" ph=" }" />
+            <marker date="1588658570159" expanded="false" signature="2820:2831" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="2857:2863" ph=" }" />
+            <marker date="1588658570159" expanded="false" signature="2926:2937" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="2972:2978" ph=" }" />
+            <marker date="1588658570159" expanded="false" signature="3007:3018" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="3044:3050" ph=" }" />
+            <marker date="1588658570159" expanded="true" signature="3107:3671" ph="{...}" />
+            <marker date="1588658570159" expanded="false" signature="3720:3731" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="3759:3765" ph=" }" />
+            <marker date="1588658570159" expanded="false" signature="3834:3845" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="3884:3890" ph=" }" />
+            <marker date="1588658570159" expanded="false" signature="3941:3952" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="4009:4015" ph=" }" />
+            <marker date="1588658570159" expanded="true" signature="4099:4192" ph="{...}" />
+            <marker date="1588658570159" expanded="false" signature="4248:4259" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="4303:4309" ph=" }" />
+            <marker date="1588658570159" expanded="true" signature="4464:4794" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="4915:5205" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="5280:7691" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="7786:7885" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="8091:10794" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="10968:13586" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="13663:13989" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="14074:14566" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="14602:14913" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="14962:16520" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="16570:17021" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="17085:18517" ph="{...}" />
+            <marker date="1588658570159" expanded="false" signature="18556:18567" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="18593:18599" ph=" }" />
+            <marker date="1588658570159" expanded="false" signature="18656:18667" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="18702:18708" ph=" }" />
+            <marker date="1588658570159" expanded="false" signature="18760:18771" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="18809:18815" ph=" }" />
+            <marker date="1588658570159" expanded="true" signature="18898:18973" ph="{...}" />
+            <marker date="1588658570159" expanded="true" signature="19031:19194" ph="{...}" />
+            <marker date="1588658570159" expanded="false" signature="19263:19274" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="19319:19325" ph=" }" />
+            <marker date="1588658570159" expanded="false" signature="19383:19394" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="19442:19448" ph=" }" />
+            <marker date="1588658570159" expanded="false" signature="19506:19517" ph=" { " />
+            <marker date="1588658570159" expanded="false" signature="19568:19574" ph=" }" />
+            <marker date="1588658570159" expanded="true" signature="19633:19759" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-828">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hc-service/src/main/java/com/mi/service/impl/AOrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="72" column="15" lean-forward="true" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2883#2884#0" expanded="true" />
-            <element signature="e#2943#2944#0" expanded="true" />
-            <element signature="e#3013#3014#0" expanded="true" />
-            <element signature="e#3071#3072#0" expanded="true" />
-            <element signature="e#3141#3142#0" expanded="true" />
-            <element signature="e#3199#3200#0" expanded="true" />
-            <element signature="e#4721#4722#0" expanded="true" />
-            <element signature="e#4777#4778#0" expanded="true" />
-            <element signature="e#6017#6018#0" expanded="true" />
-            <element signature="e#6077#6078#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="295">
+          <caret line="56" column="32" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hc-web/src/main/java/com/mi/controller/StoreOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="55" column="54" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="54" />
+        <state relative-caret-position="503">
+          <caret line="71" column="47" lean-forward="true" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1923#1939#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/entity/AppointOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hc-entity/src/main/java/com/mi/excel/AOrderReportDataDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

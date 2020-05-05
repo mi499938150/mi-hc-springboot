@@ -8,18 +8,31 @@ import com.mi.dto.OrderTwoDTO;
 import com.mi.dto.OrderZeroDTO;
 import com.mi.entity.AppointOrder;
 import com.mi.entity.AppointOrderCount;
+import com.mi.excel.AOrderReportDataDTO;
+import com.mi.excel.AOrderReportParam;
 import com.mi.form.AppointOrderForm;
 import com.mi.mapper.AOrderMapper;
 import com.mi.service.AOrderService;
 import com.mi.utils.ResponseVoUtil;
+import com.mi.utils.TimeUtil;
 import com.mi.vo.CommonResponse;
 import com.mi.vo.OrderVo;
 import lombok.extern.slf4j.Slf4j;
+import net.sf.jxls.transformer.XLSTransformer;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.ResourceUtils;
+import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.math.BigDecimal;
+import java.net.URLEncoder;
 import java.sql.Time;
 import java.util.*;
 
@@ -39,6 +52,30 @@ public class StoreOrderController {
     @Autowired
     private AOrderMapper aOrderMapper;
 
+
+    @ResponseBody
+    @RequestMapping(value = "importTheOrderData",method = RequestMethod.GET,produces = "application/json;charset=UTF-8")
+    public void  importTheOrderData( AOrderReportParam param,HttpServletResponse response) throws Exception {
+        log.info("使用importTheOrderData");
+        log.info("param = {}",param);
+        Map<String, Object> beans = new HashMap<String, Object>();
+        AOrderReportDataDTO orderReportDataDTO = aOrderService.selectByAOderRerpotDataDTO(param);
+        File template  = ResourceUtils.getFile("classpath:templates/excel/order_report_template.xlsx");
+        String uniqueDate = TimeUtil.dataformat3(new Date());
+        beans.put("results",orderReportDataDTO);
+        XLSTransformer transformer = new XLSTransformer();
+        String distFile = System.getProperty("java.io.tmpdir") + "/orderReport_"+uniqueDate+".xlsx";
+        log.warn(" path = {} , benas = {} , distFile = {}",template.getPath(),beans,distFile);
+        log.info(" beansGet = {}",beans.get("results"));
+        transformer.transformXLS(template.getPath(),beans,distFile);
+        response.setContentType("application/xls");
+        response.setCharacterEncoding("UTF-8");
+        String contentDisposition = "attachment;filename*=UTF-8''"+ URLEncoder.encode("订单统计记录表.xlsx", "UTF-8");
+        response.setHeader("Content-Disposition", contentDisposition);
+        StreamUtils.copy(new FileInputStream(new File(distFile)), response.getOutputStream());
+
+    }
+
     /**
      * 订单分页
      * @param offset
@@ -54,7 +91,7 @@ public class StoreOrderController {
                                            @RequestParam(value = "time",required = false)String time){
         log.info("【使用selectTotalPages】");
         log.info(" orderDate = {}  time={}" ,orderDate, time);
-        PageInfo<AppointOrder> pageInfo = aOrderService.selectTotalPage(offset,size,orderDate);
+        PageInfo<AppointOrder> pageInfo = aOrderService.selectTotalPage(offset,size,orderDate,time);
         return ResponseVoUtil.success(pageInfo);
     }
 
@@ -65,17 +102,18 @@ public class StoreOrderController {
      * @return
      */
     @GetMapping(value = "/selectOrderCount")
-    public CommonResponse selectOrderCount(@RequestParam(value = "orderDate",required = false)String orderDate){
+    public CommonResponse selectOrderCount(@RequestParam(value = "orderDate",required = false)String orderDate,
+                                           @RequestParam(value = "time",required = false)String time){
         log.info("【使用selectOrderCount】");
-        log.info("  orderDate = {}",orderDate);
+        log.info("  orderDate = {} time = {} ",orderDate,time);
         // 1. 获取订单 为 0 的客户总数量
-        OrderZeroDTO zeroDTO = aOrderService.customerCount(orderDate);
+        OrderZeroDTO zeroDTO = aOrderService.customerCount(orderDate,time);
 //        log.info("[客户总数据量] = {}",zeroDTO.getCutomerCount());
         // 2. 获取订单为 1 的 完成订单数据和总金额
-        OrderOneDTO oneDTO = aOrderService.finishCount(orderDate);
+        OrderOneDTO oneDTO = aOrderService.finishCount(orderDate,time);
 //        log.info("[完成订单总数据量] = {} [完成订单总金额] = {}",oneDTO.getFinishCount(),oneDTO.getFinishAmount());
         // 3. 获取订单为 2 的 取消订单数据和总金额
-        OrderTwoDTO twoDTO = aOrderService.cancelCount(orderDate);
+        OrderTwoDTO twoDTO = aOrderService.cancelCount(orderDate,time);
 //        log.info("[取消订单总数据量] = {} [取消订单总金额] = {}",twoDTO.getCancelCount(),twoDTO.getCancelAmount());
         // 4. 进行数据转化拼接
         OrderVo orderVo = OrderVoConverter.convert(zeroDTO,oneDTO,twoDTO);

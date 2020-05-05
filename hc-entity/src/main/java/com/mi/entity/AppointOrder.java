@@ -49,7 +49,6 @@ public class AppointOrder   implements Serializable {
 //    private String orderTime;
 
     /**下单时间**/
-    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
     private Date orderDate;
 
     /**订单支付方式    默认0  支付宝    1  微信**/
