@@ -69,9 +69,16 @@
             <artifactId>hc-dao</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.mi</groupId>
+            <artifactId>hc-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--jwt-->
+
 
         <!--excel操作-->
-
         <!-- https://mvnrepository.com/artifact/org.jxls/jxls -->
         <dependency>
             <groupId>org.jxls</groupId>

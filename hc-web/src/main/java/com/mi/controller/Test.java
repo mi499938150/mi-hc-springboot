@@ -1,10 +1,8 @@
 package com.mi.controller;
 
 import com.mi.entity.AppointService;
-import com.mi.entity.User;
 import com.mi.exception.HcException;
 import com.mi.service.AServiceService;
-import com.mi.service.UserService;
 import com.mi.utils.ResponseVoUtil;
 import com.mi.vo.CommonResponse;
 import org.springframework.beans.factory.annotation.Autowired;
